@@ -206,6 +206,10 @@ footer { background:var(--dark); color:#fff; padding:44px 24px 28px; }
 @media(max-width:640px){
   [style*="--phase-grid"] > div { text-align:center !important; }
 }
+
+@media(max-width:640px){
+  [style*="--vid-grid"] { grid-template-columns: 1fr !important; }
+}
 </style>
 </head>
 <body>
@@ -287,7 +291,7 @@ footer { background:var(--dark); color:#fff; padding:44px 24px 28px; }
   <div class="kicker">Already In Motion</div>
   <h2>The first custom toys for Camp IHC and Camp Pontiac are already in development.</h2>
   <p class="sub">We're turning our first designs into real products — the beginning of something that will keep growing.</p>
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:960px; margin:0 auto;">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; max-width:960px; margin:0 auto; --vid-grid:1;">
     <div style="border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,.12);">
       <video autoplay muted loop playsinline style="width:100%; display:block;">
         <source src="/squeeze_video.mp4" type="video/mp4">
