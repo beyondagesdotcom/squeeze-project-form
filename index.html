@@ -218,35 +218,22 @@ footer { background:var(--dark); color:#fff; padding:44px 24px 28px; }
     <a href="#how" class="btn-outline">How It Works</a>
   </div>
 
-  <div style="margin:28px auto 0; max-width:400px;">
-    <div style="background:rgba(255,255,255,0.85); border:1.5px solid #c8e6d4; border-radius:40px; padding:12px 28px; display:inline-flex; align-items:center; gap:12px; box-shadow:0 2px 12px rgba(0,0,0,0.06);">
-      <span style="font-size:20px;">💚</span>
-      <div style="text-align:left;">
-        <div style="font-size:11px; color:#888; font-weight:600; text-transform:uppercase; letter-spacing:1px;">Total Raised</div>
-        <div style="font-size:22px; font-weight:900; color:var(--green);" id="heroTicker">$0</div>
-      </div>
-      <div style="width:1px; height:36px; background:#ddd;"></div>
-      <div style="text-align:left;">
-        <div style="font-size:11px; color:#888; font-weight:600; text-transform:uppercase; letter-spacing:1px;">Current Goal · 3 Camps</div>
-        <div style="font-size:22px; font-weight:900; color:var(--dark);">$6,750</div>
-      </div>
-    </div>
+  <div style="margin:28px auto 0; text-align:center;">
+    <div style="display:inline-block; background:rgba(255,255,255,0.85); border:1.5px solid #c8e6d4; border-radius:40px; padding:12px 28px; font-size:17px; font-weight:800; color:var(--green); box-shadow:0 2px 12px rgba(0,0,0,0.06);">💚 <span id="heroTicker">$0</span> raised toward launching our first 3 camps</div>
   </div>
   <script>
     (function(){
-      var target = 1898, el = document.getElementById("heroTicker"), start = 0, duration = 1800;
-      var startTime = null;
+      var target = 1898, el = document.getElementById("heroTicker"), duration = 1800, startTime = null;
       function step(ts){
         if(!startTime) startTime = ts;
-        var progress = Math.min((ts - startTime) / duration, 1);
-        var ease = 1 - Math.pow(1 - progress, 3);
-        el.textContent = "$" + Math.floor(ease * target).toLocaleString();
-        if(progress < 1) requestAnimationFrame(step);
+        var p = Math.min((ts-startTime)/duration,1), ease = 1-Math.pow(1-p,3);
+        el.textContent = "$"+Math.floor(ease*target).toLocaleString();
+        if(p<1) requestAnimationFrame(step);
       }
       requestAnimationFrame(step);
     })();
   </script>
-  <p class="trust">In partnership with <span>SCOPE</span> · scopeusa.org · 501(c)(3) status pending</p>
+  <p class="trust">In partnership with <span>SCOPE</span> · 501(c)(3) status pending</p>
 </section>
 
 <!-- QUOTE -->
