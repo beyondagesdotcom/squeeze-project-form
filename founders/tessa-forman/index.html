@@ -205,5 +205,21 @@ function hideZelle(){ document.getElementById("zelleModal").classList.remove("ac
 <script>
 
 </script>
+<script>
+fetch('/data/donations.json').then(r=>r.json()).then(d=>{
+  const a = d.ambassadors['tessa'];
+  const raised = a.raised, goal = a.goal;
+  const pct = Math.min(100, Math.round(raised/goal*100));
+  const remaining = goal - raised;
+  const rEl = document.getElementById('raisedAmt');
+  const fEl = document.getElementById('progressFill');
+  const pEl = document.getElementById('pct');
+  const remEl = document.getElementById('remaining');
+  if(rEl) rEl.textContent = '$'+raised.toLocaleString();
+  if(fEl) fEl.style.width = pct+'%';
+  if(pEl) pEl.textContent = pct+'%';
+  if(remEl) remEl.textContent = '$'+remaining.toLocaleString();
+}).catch(()=>{});
+</script>
 </body>
 </html>
