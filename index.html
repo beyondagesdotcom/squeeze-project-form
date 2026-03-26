@@ -243,8 +243,8 @@ footer { background:var(--dark); color:#fff; padding:44px 24px 28px; }
     <div style="display:inline-block; background:rgba(255,255,255,0.85); border:1.5px solid #c8e6d4; border-radius:40px; padding:12px 28px; font-size:17px; font-weight:800; color:var(--green); box-shadow:0 2px 12px rgba(0,0,0,0.06);">💚 <span id="heroTicker">$0</span> raised toward launching our first 4 camps</div>
   </div>
   <script>
-    (function(){
-      var target = 5020, el = document.getElementById("heroTicker"), duration = 1800, startTime = null;
+    fetch('/data/donations.json').then(r=>r.json()).then(d=>{
+      var target = d.grand_total, el = document.getElementById("heroTicker"), duration = 1800, startTime = null;
       function step(ts){
         if(!startTime) startTime = ts;
         var p = Math.min((ts-startTime)/duration,1), ease = 1-Math.pow(1-p,3);
@@ -252,7 +252,9 @@ footer { background:var(--dark); color:#fff; padding:44px 24px 28px; }
         if(p<1) requestAnimationFrame(step);
       }
       requestAnimationFrame(step);
-    })();
+    }).catch(()=>{
+      document.getElementById("heroTicker").textContent = "$5,040";
+    });
   </script>
   <p class="trust">In partnership with <span>SCOPE</span> · 501(c)(3) status pending</p>
 </section>
