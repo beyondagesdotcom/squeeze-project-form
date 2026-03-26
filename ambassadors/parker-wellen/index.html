@@ -94,7 +94,7 @@ footer a { color:rgba(255,255,255,.65); }
     <img src="/logo.jpg" alt="The Squeeze Project">
     <span>The Squeeze Project</span>
   </a>
-  <a href="/" style="background:rgba(255,255,255,.15);color:white;font-size:13px;font-weight:700;padding:8px 16px;border-radius:20px;text-decoration:none;border:1px solid rgba(255,255,255,.3);">Learn more about The Squeeze Project →</a>
+  
 </nav>
 
 <!-- HERO -->
@@ -198,5 +198,9 @@ fetch('/data/donations.json').then(r=>r.json()).then(d=>{
   if(remEl) remEl.textContent = '$'+(goal-raised).toLocaleString();
 }).catch(()=>{});
 </script>
+<div style="text-align:center;padding:32px 24px;border-top:1px solid #eee;margin-top:16px;">
+  <p style="font-size:13px;color:#888;margin-bottom:10px;">Want to understand the full mission?</p>
+  <a href="/" style="display:inline-block;background:#1a2e23;color:white;font-size:14px;font-weight:700;padding:12px 28px;border-radius:24px;text-decoration:none;">Learn more about The Squeeze Project →</a>
+</div>
 </body>
 </html>
