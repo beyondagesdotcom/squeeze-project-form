@@ -148,7 +148,7 @@ footer a { color:rgba(255,255,255,.65); }
   <div class="share-card">
     <h3>Help Remy spread the word</h3>
     <p>Share this page with your friends and family. Every share helps get closer to the $2,250 goal.</p>
-    <div class="share-url">thesqueezeproject.com/remi</div>
+    <div class="share-url">thesqueezeproject.com/remy</div>
     <button class="btn-copy" onclick="copyLink()">Copy Link</button>
   </div>
 </div>
@@ -182,7 +182,7 @@ footer a { color:rgba(255,255,255,.65); }
 <script>
 function showZelle(){ document.getElementById("zelleModal").classList.add("active"); }
 function hideZelle(){ document.getElementById("zelleModal").classList.remove("active"); }
-function copyLink(){ navigator.clipboard.writeText('https://thesqueezeproject.com/remi').then(()=>alert('Link copied!')); }
+function copyLink(){ navigator.clipboard.writeText('https://thesqueezeproject.com/remy').then(()=>alert('Link copied!')); }
 
 fetch('/data/donations.json').then(r=>r.json()).then(d=>{
   const a = d.ambassadors['remi'];
