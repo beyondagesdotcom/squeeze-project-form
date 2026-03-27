@@ -1,5 +1,5 @@
 {
-  "grand_total": 8429,
+  "grand_total": 8454,
   "goal": 14250,
   "ambassadors": {
     "luke": {
@@ -265,7 +265,7 @@
       "camp": "Camp Wah-Nee",
       "color": "#8B1A1A",
       "goal": 3000,
-      "raised": 2260,
+      "raised": 2285,
       "donations": [
         {
           "date": "Mar 25",
@@ -463,6 +463,12 @@
           "date": "Mar 27",
           "name": "Becca Zipkin",
           "amount": 250,
+          "platform": "venmo"
+        },
+        {
+          "date": "Mar 27",
+          "name": "Jennifer Gallow",
+          "amount": 25,
           "platform": "venmo"
         }
       ]
