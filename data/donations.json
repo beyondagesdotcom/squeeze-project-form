@@ -1,5 +1,5 @@
 {
-  "grand_total": 7968,
+  "grand_total": 7993,
   "goal": 13500,
   "ambassadors": {
     "luke": {
@@ -130,7 +130,7 @@
       "camp": "Camp Pontiac",
       "color": "#CC0000",
       "goal": 2250,
-      "raised": 2275,
+      "raised": 2300,
       "donations": [
         {
           "date": "Mar 24",
@@ -249,6 +249,12 @@
         {
           "date": "Mar 27",
           "name": "Diane Mandel",
+          "amount": 25,
+          "platform": "venmo"
+        },
+        {
+          "date": "Mar 27",
+          "name": "Jill Halal",
           "amount": 25,
           "platform": "venmo"
         }
