@@ -1,6 +1,6 @@
 {
   "grand_total": 8429,
-  "goal": 13500,
+  "goal": 14250,
   "ambassadors": {
     "luke": {
       "name": "Luke & Aria Kerman",
@@ -264,7 +264,7 @@
       "name": "Ben & Jack",
       "camp": "Camp Wah-Nee",
       "color": "#8B1A1A",
-      "goal": 2250,
+      "goal": 3000,
       "raised": 2260,
       "donations": [
         {
