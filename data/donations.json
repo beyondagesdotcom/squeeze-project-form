@@ -1,5 +1,5 @@
 {
-  "grand_total": 7618,
+  "grand_total": 7668,
   "goal": 13500,
   "ambassadors": {
     "luke": {
@@ -7,7 +7,7 @@
       "camp": "Camp IHC",
       "color": "#4A6FA5",
       "goal": 2250,
-      "raised": 1962,
+      "raised": 2012,
       "donations": [
         {
           "date": "Mar 24",
@@ -116,6 +116,12 @@
           "name": "Jason Lilien",
           "amount": 100,
           "platform": "stripe"
+        },
+        {
+          "date": "Mar 27",
+          "name": "Robin Boyarski",
+          "amount": 50,
+          "platform": "venmo"
         }
       ]
     },
