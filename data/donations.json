@@ -1,5 +1,5 @@
 {
-  "grand_total": 7693,
+  "grand_total": 7843,
   "goal": 16250,
   "ambassadors": {
     "luke": {
@@ -442,7 +442,7 @@
       "camp": "Camp Westmont",
       "color": "#1a2744",
       "goal": 2250,
-      "raised": 1250,
+      "raised": 1400,
       "donations": [
         {
           "date": "Mar 24",
@@ -563,6 +563,12 @@
           "name": "Kimberly Abramowitz",
           "amount": 25,
           "platform": "venmo"
+        },
+        {
+          "date": "Mar 27",
+          "name": "Alexander M. Brody",
+          "amount": 150,
+          "platform": "stripe"
         }
       ]
     },
