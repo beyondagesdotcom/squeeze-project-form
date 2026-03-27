@@ -1,5 +1,5 @@
 {
-  "grand_total": 7508,
+  "grand_total": 7518,
   "goal": 13500,
   "ambassadors": {
     "luke": {
@@ -436,7 +436,7 @@
       "camp": "Camp Westmont",
       "color": "#1a2744",
       "goal": 2250,
-      "raised": 1115,
+      "raised": 1125,
       "donations": [
         {
           "date": "Mar 24",
@@ -527,6 +527,12 @@
           "name": "Adam Brody",
           "amount": 100,
           "platform": "stripe"
+        },
+        {
+          "date": "Mar 26",
+          "name": "Anastasia Schandel",
+          "amount": 10,
+          "platform": "venmo"
         }
       ]
     },
