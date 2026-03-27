@@ -137,10 +137,7 @@ async function loadProgress() {
     if (donors > 0) document.getElementById('donor-count').textContent = donors + ' donor' + (donors !== 1 ? 's' : '');
   } catch(e) {}
 }
-const stripeLink = null; // TODO: replace with plink_ ID once Jarret creates it
-if (stripeLink) {
-  document.getElementById('stripe-btn').href = 'https://buy.stripe.com/' + stripeLink;
-}
+document.getElementById('stripe-btn').href = 'https://buy.stripe.com/cNifZg1PPbux7q94Uk24005';
 loadProgress();
 </script>
 </body>
