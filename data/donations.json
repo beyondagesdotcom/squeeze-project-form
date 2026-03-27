@@ -1,5 +1,5 @@
 {
-  "grand_total": 7518,
+  "grand_total": 7618,
   "goal": 13500,
   "ambassadors": {
     "luke": {
@@ -436,7 +436,7 @@
       "camp": "Camp Westmont",
       "color": "#1a2744",
       "goal": 2250,
-      "raised": 1125,
+      "raised": 1225,
       "donations": [
         {
           "date": "Mar 24",
@@ -532,6 +532,24 @@
           "date": "Mar 26",
           "name": "Anastasia Schandel",
           "amount": 10,
+          "platform": "venmo"
+        },
+        {
+          "date": "Mar 27",
+          "name": "Brooke Gottesman",
+          "amount": 25,
+          "platform": "venmo"
+        },
+        {
+          "date": "Mar 27",
+          "name": "Robyn Croutch",
+          "amount": 50,
+          "platform": "venmo"
+        },
+        {
+          "date": "Mar 27",
+          "name": "Andrew Hochfelder",
+          "amount": 25,
           "platform": "venmo"
         }
       ]
