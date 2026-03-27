@@ -1,5 +1,5 @@
 {
-  "grand_total": 7843,
+  "grand_total": 7868,
   "goal": 16250,
   "ambassadors": {
     "luke": {
@@ -130,7 +130,7 @@
       "camp": "Camp Pontiac",
       "color": "#CC0000",
       "goal": 5000,
-      "raised": 2250,
+      "raised": 2275,
       "donations": [
         {
           "date": "Mar 24",
@@ -245,6 +245,12 @@
           "name": "Domenick Chieco",
           "amount": 722,
           "platform": "stripe"
+        },
+        {
+          "date": "Mar 27",
+          "name": "Diane Mandel",
+          "amount": 25,
+          "platform": "venmo"
         }
       ]
     },
