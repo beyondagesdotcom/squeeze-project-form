@@ -1,5 +1,5 @@
 {
-  "grand_total": 7993,
+  "grand_total": 8043,
   "goal": 13500,
   "ambassadors": {
     "luke": {
@@ -265,7 +265,7 @@
       "camp": "Camp Wah-Nee",
       "color": "#8B1A1A",
       "goal": 2250,
-      "raised": 1860,
+      "raised": 1910,
       "donations": [
         {
           "date": "Mar 25",
@@ -446,6 +446,12 @@
           "name": "Stephanie Newman",
           "amount": 25.0,
           "platform": "stripe"
+        },
+        {
+          "date": "Mar 27",
+          "name": "Lauren Mintz",
+          "amount": 50,
+          "platform": "venmo"
         }
       ]
     },
