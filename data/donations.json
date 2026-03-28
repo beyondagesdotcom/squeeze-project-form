@@ -1,5 +1,5 @@
 {
-  "grand_total": 8582,
+  "grand_total": 8682,
   "goal": 14500,
   "ambassadors": {
     "luke": {
@@ -7,7 +7,7 @@
       "camp": "Camp IHC",
       "color": "#4A6FA5",
       "goal": 2250,
-      "raised": 2012,
+      "raised": 2112,
       "donations": [
         {
           "date": "Mar 24",
@@ -122,6 +122,12 @@
           "name": "Robin Boyarski",
           "amount": 50,
           "platform": "venmo"
+        },
+        {
+          "date": "Mar 28",
+          "name": "Debbie Kravitz",
+          "amount": 100,
+          "platform": "stripe"
         }
       ]
     },
