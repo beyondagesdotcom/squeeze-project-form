@@ -1,5 +1,5 @@
 {
-  "grand_total": 8774,
+  "grand_total": 8874,
   "goal": 14750,
   "ambassadors": {
     "luke": {
@@ -7,7 +7,7 @@
       "camp": "Camp IHC",
       "color": "#4A6FA5",
       "goal": 2500,
-      "raised": 2112,
+      "raised": 2212,
       "donations": [
         {
           "date": "Mar 24",
@@ -126,6 +126,12 @@
         {
           "date": "Mar 28",
           "name": "Debbie Kravitz",
+          "amount": 100,
+          "platform": "stripe"
+        },
+        {
+          "date": "Mar 28",
+          "name": "Gail Brown",
           "amount": 100,
           "platform": "stripe"
         }
