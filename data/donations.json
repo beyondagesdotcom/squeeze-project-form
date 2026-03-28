@@ -1,5 +1,5 @@
 {
-  "grand_total": 8682,
+  "grand_total": 8702,
   "goal": 14750,
   "ambassadors": {
     "luke": {
@@ -688,12 +688,18 @@
       "camp": "Tyler Hill Camp",
       "color": "#1e3a8a",
       "goal": 2250,
-      "raised": 100,
+      "raised": 120,
       "donations": [
         {
           "date": "Mar 28",
           "name": "Erica Helfer",
           "amount": 100,
+          "platform": "venmo"
+        },
+        {
+          "date": "Mar 28",
+          "name": "Rebecca Gick",
+          "amount": 20,
           "platform": "venmo"
         }
       ],
