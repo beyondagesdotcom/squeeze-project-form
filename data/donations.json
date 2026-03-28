@@ -1,5 +1,5 @@
 {
-  "grand_total": 8564,
+  "grand_total": 8582,
   "goal": 14250,
   "ambassadors": {
     "luke": {
@@ -478,7 +478,7 @@
       "camp": "Camp Westmont",
       "color": "#1a2744",
       "goal": 2250,
-      "raised": 1546,
+      "raised": 1564,
       "donations": [
         {
           "date": "Mar 24",
@@ -622,6 +622,12 @@
           "date": "Mar 27",
           "name": "Philip Heyman",
           "amount": 10,
+          "platform": "venmo"
+        },
+        {
+          "date": "Mar 28",
+          "name": "Amy Endelson",
+          "amount": 18,
           "platform": "venmo"
         }
       ]
