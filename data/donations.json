@@ -1,5 +1,5 @@
 {
-  "grand_total": 8702,
+  "grand_total": 8738,
   "goal": 14750,
   "ambassadors": {
     "luke": {
@@ -271,7 +271,7 @@
       "camp": "Camp Wah-Nee",
       "color": "#8B1A1A",
       "goal": 3000,
-      "raised": 2285,
+      "raised": 2321,
       "donations": [
         {
           "date": "Mar 25",
@@ -475,6 +475,12 @@
           "date": "Mar 27",
           "name": "Jennifer Gallow",
           "amount": 25,
+          "platform": "venmo"
+        },
+        {
+          "date": "Mar 28",
+          "name": "Jill Stern",
+          "amount": 36,
           "platform": "venmo"
         }
       ]
