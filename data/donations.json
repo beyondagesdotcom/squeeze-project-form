@@ -1,5 +1,5 @@
 {
-  "grand_total": 9212,
+  "grand_total": 9312,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -7,7 +7,7 @@
       "camp": "Camp IHC",
       "color": "#4A6FA5",
       "goal": 3000,
-      "raised": 2550,
+      "raised": 2650,
       "donations": [
         {
           "date": "Mar 24",
@@ -146,6 +146,12 @@
           "name": "Nicole Cohn",
           "amount": 50,
           "platform": "stripe"
+        },
+        {
+          "date": "Mar 29",
+          "name": "Lauren Levine",
+          "amount": 100,
+          "platform": "venmo"
         }
       ]
     },
