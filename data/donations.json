@@ -1,5 +1,5 @@
 {
-  "grand_total": 9312,
+  "grand_total": 9642,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -7,7 +7,7 @@
       "camp": "Camp IHC",
       "color": "#4A6FA5",
       "goal": 3000,
-      "raised": 2650,
+      "raised": 2700,
       "donations": [
         {
           "date": "Mar 24",
@@ -152,6 +152,12 @@
           "name": "Lauren Levine",
           "amount": 100,
           "platform": "venmo"
+        },
+        {
+          "date": "Mar 29",
+          "name": "Julie Hoffman",
+          "amount": 50,
+          "platform": "stripe"
         }
       ]
     },
@@ -514,7 +520,7 @@
       "camp": "Camp Westmont",
       "color": "#1a2744",
       "goal": 2250,
-      "raised": 1600,
+      "raised": 1780,
       "donations": [
         {
           "date": "Mar 24",
@@ -671,6 +677,12 @@
           "name": "Brooke Fisher",
           "amount": 36,
           "platform": "venmo"
+        },
+        {
+          "date": "Mar 29",
+          "name": "Karen Rosenfield",
+          "amount": 180,
+          "platform": "venmo"
         }
       ]
     },
@@ -724,7 +736,7 @@
       "camp": "Tyler Hill Camp",
       "color": "#1e3a8a",
       "goal": 2250,
-      "raised": 120,
+      "raised": 220,
       "donations": [
         {
           "date": "Mar 28",
@@ -736,6 +748,12 @@
           "date": "Mar 28",
           "name": "Rebecca Gick",
           "amount": 20,
+          "platform": "venmo"
+        },
+        {
+          "date": "Mar 29",
+          "name": "Brian Newman",
+          "amount": 100,
           "platform": "venmo"
         }
       ],
