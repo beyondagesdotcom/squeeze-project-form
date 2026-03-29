@@ -1,5 +1,5 @@
 {
-  "grand_total": 9642,
+  "grand_total": 9672,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -7,7 +7,7 @@
       "camp": "Camp IHC",
       "color": "#4A6FA5",
       "goal": 3000,
-      "raised": 2700,
+      "raised": 2730,
       "donations": [
         {
           "date": "Mar 24",
@@ -157,6 +157,12 @@
           "date": "Mar 29",
           "name": "Julie Hoffman",
           "amount": 50,
+          "platform": "stripe"
+        },
+        {
+          "date": "Mar 29",
+          "name": "Brittney Garavalli",
+          "amount": 30,
           "platform": "stripe"
         }
       ]
