@@ -1,5 +1,5 @@
 {
-  "grand_total": 8874,
+  "grand_total": 9212,
   "goal": 14750,
   "ambassadors": {
     "luke": {
@@ -7,7 +7,7 @@
       "camp": "Camp IHC",
       "color": "#4A6FA5",
       "goal": 2500,
-      "raised": 2212,
+      "raised": 2550,
       "donations": [
         {
           "date": "Mar 24",
@@ -133,6 +133,18 @@
           "date": "Mar 28",
           "name": "Gail Brown",
           "amount": 100,
+          "platform": "stripe"
+        },
+        {
+          "date": "Mar 29",
+          "name": "Frank Siringo",
+          "amount": 288,
+          "platform": "stripe"
+        },
+        {
+          "date": "Mar 29",
+          "name": "Nicole Cohn",
+          "amount": 50,
           "platform": "stripe"
         }
       ]
