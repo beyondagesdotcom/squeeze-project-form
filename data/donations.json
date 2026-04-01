@@ -1,5 +1,5 @@
 {
-  "grand_total": 9922,
+  "grand_total": 10022,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -538,7 +538,7 @@
       "camp": "Camp Westmont",
       "color": "#1a2744",
       "goal": 2250,
-      "raised": 1930,
+      "raised": 2030,
       "donations": [
         {
           "date": "Mar 24",
@@ -712,6 +712,12 @@
           "date": "Mar 30",
           "name": "Vivian Franklin",
           "amount": 50,
+          "platform": "stripe"
+        },
+        {
+          "date": "Apr 1",
+          "name": "Andrea Kreinik",
+          "amount": 100,
           "platform": "stripe"
         }
       ]
