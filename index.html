@@ -100,6 +100,8 @@ nav {
 
 /* VIDEO */
 .video-wrap { max-width:720px; margin:0 auto; border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,.12); }
+.video-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; max-width:1100px; margin:0 auto; }
+@media(max-width:700px){ .video-grid { grid-template-columns:1fr; } }
 .video-wrap video { width:100%; display:block; }
 
 /* STEPS */
@@ -293,7 +295,7 @@ footer { background:var(--dark); color:#fff; padding:44px 24px 28px; }
   <div class="kicker">Already In Motion</div>
   <h2>The first custom toys are already in development.</h2>
   <p class="sub">We're turning our first designs into real products — the beginning of something that will keep growing.</p>
-  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; max-width:1100px; margin:0 auto;">
+  <div class="video-grid">
     <div style="border-radius:16px; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,.12);">
       <video autoplay muted loop playsinline style="width:100%; display:block;">
         <source src="/squeeze_video.mp4" type="video/mp4">
