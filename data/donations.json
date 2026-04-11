@@ -1,5 +1,5 @@
 {
-  "grand_total": 10022,
+  "grand_total": 10292.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -7,7 +7,7 @@
       "camp": "Camp IHC",
       "color": "#4A6FA5",
       "goal": 3000,
-      "raised": 2730,
+      "raised": 3000.0,
       "donations": [
         {
           "date": "Mar 24",
@@ -164,6 +164,12 @@
           "name": "Brittney Garavalli",
           "amount": 30,
           "platform": "stripe"
+        },
+        {
+          "date": "Apr 11",
+          "name": "Scott Lebovitz",
+          "amount": 270.0,
+          "platform": "venmo"
         }
       ]
     },
