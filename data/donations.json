@@ -854,6 +854,15 @@
         }
       ],
       "logo": "https://i.imgur.com/19ea8C7.jpeg"
+    },
+    "ashley": {
+      "name": "Ashley Kessler",
+      "camp": "Camp Towanda",
+      "color": "#2f6f6f",
+      "goal": 2250,
+      "raised": 0,
+      "donations": [],
+      "logo": "/img/ashley-kessler.jpg"
     }
   }
 }
