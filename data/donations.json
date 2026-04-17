@@ -1,5 +1,5 @@
 {
-  "grand_total": 10903.0,
+  "grand_total": 10953.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -860,7 +860,7 @@
       "camp": "Camp Towanda",
       "color": "#2f6f6f",
       "goal": 2250,
-      "raised": 160.0,
+      "raised": 210.0,
       "donations": [
         {
           "date": "Apr 16",
@@ -890,6 +890,12 @@
           "date": "Apr 17",
           "name": "Elyse Delgado",
           "amount": 20,
+          "platform": "venmo"
+        },
+        {
+          "date": "Apr 17",
+          "name": "Mara Seigerman",
+          "amount": 50,
           "platform": "venmo"
         }
       ],
