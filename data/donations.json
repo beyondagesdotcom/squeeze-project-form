@@ -1,5 +1,5 @@
 {
-  "grand_total": 11326.0,
+  "grand_total": 11562.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -802,7 +802,7 @@
       "camp": "Tyler Hill Camp",
       "color": "#1e3a8a",
       "goal": 2250,
-      "raised": 465.0,
+      "raised": 515.0,
       "donations": [
         {
           "date": "Mar 28",
@@ -851,6 +851,12 @@
           "name": "Lisbeth Newman",
           "amount": 100,
           "platform": "venmo"
+        },
+        {
+          "date": "Apr 17",
+          "name": "Candy Campus",
+          "amount": 50,
+          "platform": "venmo"
         }
       ],
       "logo": "https://i.imgur.com/19ea8C7.jpeg"
@@ -860,7 +866,7 @@
       "camp": "Camp Towanda",
       "color": "#2f6f6f",
       "goal": 2250,
-      "raised": 583.0,
+      "raised": 769.0,
       "donations": [
         {
           "date": "Apr 16",
@@ -926,6 +932,24 @@
           "date": "Apr 17",
           "name": "Andrea Diamond",
           "amount": 36,
+          "platform": "venmo"
+        },
+        {
+          "date": "Apr 17",
+          "name": "Jodi Tesser",
+          "amount": 36,
+          "platform": "venmo"
+        },
+        {
+          "date": "Apr 17",
+          "name": "Elizabeth Sagat",
+          "amount": 100,
+          "platform": "venmo"
+        },
+        {
+          "date": "Apr 17",
+          "name": "Amanda Desocio",
+          "amount": 50,
           "platform": "venmo"
         }
       ],
