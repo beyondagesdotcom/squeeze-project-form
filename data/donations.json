@@ -1,5 +1,5 @@
 {
-  "grand_total": 11562.0,
+  "grand_total": 11689.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -866,7 +866,7 @@
       "camp": "Camp Towanda",
       "color": "#2f6f6f",
       "goal": 2250,
-      "raised": 769.0,
+      "raised": 896.0,
       "donations": [
         {
           "date": "Apr 16",
@@ -951,6 +951,30 @@
           "name": "Amanda Desocio",
           "amount": 50,
           "platform": "venmo"
+        },
+        {
+          "date": "Apr 16",
+          "name": "Brett Flanz",
+          "amount": 54,
+          "platform": "stripe"
+        },
+        {
+          "date": "Apr 16",
+          "name": "Erin Silverman",
+          "amount": 25,
+          "platform": "stripe"
+        },
+        {
+          "date": "Apr 16",
+          "name": "Marilou Concepcion",
+          "amount": 30,
+          "platform": "stripe"
+        },
+        {
+          "date": "Apr 16",
+          "name": "Kelly Geisler",
+          "amount": 18,
+          "platform": "stripe"
         }
       ],
       "logo": "/img/camp-towanda-logo.jpg"
