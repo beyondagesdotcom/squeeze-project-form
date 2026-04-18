@@ -1,5 +1,5 @@
 {
-  "grand_total": 12442.0,
+  "grand_total": 12492.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -866,7 +866,7 @@
       "camp": "Camp Towanda",
       "color": "#2f6f6f",
       "goal": 2250,
-      "raised": 1649.0,
+      "raised": 1699.0,
       "donations": [
         {
           "date": "Apr 16",
@@ -1083,6 +1083,12 @@
           "name": "Amy Sztejman Simon",
           "amount": 30,
           "platform": "venmo"
+        },
+        {
+          "date": "Apr 18",
+          "name": "Carly Laffie",
+          "amount": 50,
+          "platform": "stripe"
         }
       ],
       "logo": "/img/camp-towanda-logo.jpg"
