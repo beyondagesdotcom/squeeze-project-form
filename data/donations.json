@@ -1,5 +1,5 @@
 {
-  "grand_total": 12517.0,
+  "grand_total": 12567.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -866,7 +866,7 @@
       "camp": "Camp Towanda",
       "color": "#2f6f6f",
       "goal": 2250,
-      "raised": 1724.0,
+      "raised": 1774.0,
       "donations": [
         {
           "date": "Apr 16",
@@ -1095,6 +1095,12 @@
           "name": "Bari Shapiro",
           "amount": 25,
           "platform": "venmo"
+        },
+        {
+          "date": "Apr 18",
+          "name": "David Ginsburg",
+          "amount": 50,
+          "platform": "stripe"
         }
       ],
       "logo": "/img/camp-towanda-logo.jpg"
