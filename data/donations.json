@@ -1,5 +1,5 @@
 {
-  "grand_total": 13939.0,
+  "grand_total": 13989.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -568,7 +568,7 @@
       "camp": "Camp Westmont",
       "color": "#1a2744",
       "goal": 2250,
-      "raised": 2200.0,
+      "raised": 2250.0,
       "donations": [
         {
           "date": "Mar 24",
@@ -773,6 +773,12 @@
           "name": "Jason Kessler",
           "amount": 36,
           "platform": "venmo"
+        },
+        {
+          "date": "Apr 20",
+          "name": "Andrea Kreinik",
+          "amount": 50,
+          "platform": "stripe"
         }
       ]
     },
