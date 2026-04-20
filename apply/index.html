@@ -191,7 +191,7 @@ footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
 <div class="page-header">
   <div class="badge">🏕️ Camp Ambassador Program</div>
   <h1>Commitment Form</h1>
-  <p>Fill out the form below to officially join The Squeeze Project Camp Ambassador program and help bring a custom camp squeeze toy to life.</p>
+  <p>Fill out the form below to officially join The Squeeze Project Camp Ambassador program and help bring a custom camp squeeze toy to life, either as one ambassador or as co-ambassadors.</p>
 </div>
 
 <div class="page-body">
@@ -200,10 +200,11 @@ footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
   <div class="how-mini">
     <h3>Before You Apply — Here's What You're Committing To</h3>
     <ul>
-      <li><div class="dot">1</div><span>Each Camp Ambassador commits to raising $2,250 — the exact one-time cost to create the custom production mold for a camp toy.</span></li>
-      <li><div class="dot">2</div><span>The mold is made once and can be used again in the future. This is not a recurring charge.</span></li>
-      <li><div class="dot">3</div><span>Once you join, we begin the mold design process. The estimated timeline is approximately 6 weeks.</span></li>
-      <li><div class="dot">4</div><span>When the factory is ready, the full $2,250 must be available — whether raised from donations or paid directly by the family.</span></li>
+      <li><div class="dot">1</div><span>Each camp campaign requires raising $2,250 total — the exact one-time cost to create the custom production mold for a camp toy.</span></li>
+      <li><div class="dot">2</div><span>You may apply as one ambassador or as two co-ambassadors sharing the same camp campaign.</span></li>
+      <li><div class="dot">3</div><span>The mold is made once and can be used again in the future. This is not a recurring charge.</span></li>
+      <li><div class="dot">4</div><span>Once you join, we begin the mold design process. The estimated timeline is approximately 6 weeks.</span></li>
+      <li><div class="dot">5</div><span>When the factory is ready, the full $2,250 must be available — whether raised from donations or paid directly by the family or families involved.</span></li>
     </ul>
   </div>
 
@@ -212,15 +213,14 @@ footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
     <form id="ambassadorForm" onsubmit="handleSubmit(event)">
 
       <!-- SECTION 1 -->
-      <div class="form-section-head">👤 Child & Family Information</div>
+      <div class="form-section-head">👤 Ambassador Information</div>
       <div class="form-body">
         <div class="field">
-          <label>Child's Full Name <span class="req">*</span></label>
-          <input type="text" name="child_name" required placeholder="First and last name">
-        </div>
-        <div class="field">
-          <label>Parent / Guardian Full Name <span class="req">*</span></label>
-          <input type="text" name="parent_name" required placeholder="First and last name">
+          <label>Applying As <span class="req">*</span></label>
+          <div class="two-col">
+            <label class="check-item"><input type="radio" name="application_type" value="single" checked onchange="toggleCoAmbassadors()"><span>One ambassador</span></label>
+            <label class="check-item"><input type="radio" name="application_type" value="co" onchange="toggleCoAmbassadors()"><span>Co-ambassadors (2 people)</span></label>
+          </div>
         </div>
         <div class="field">
           <label>Camp Name <span class="req">*</span></label>
@@ -228,12 +228,34 @@ footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
         </div>
         <div class="two-col">
           <div class="field">
-            <label>Email Address <span class="req">*</span></label>
+            <label>Primary Email Address <span class="req">*</span></label>
             <input type="email" name="email" required placeholder="you@example.com">
           </div>
           <div class="field">
-            <label>Phone Number <span class="req">*</span></label>
+            <label>Primary Phone Number <span class="req">*</span></label>
             <input type="tel" name="phone" required placeholder="(555) 000-0000">
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="field">
+            <label>Ambassador 1 Child's Full Name <span class="req">*</span></label>
+            <input type="text" name="child_name" required placeholder="First and last name">
+          </div>
+          <div class="field">
+            <label>Ambassador 1 Parent / Guardian Full Name <span class="req">*</span></label>
+            <input type="text" name="parent_name" required placeholder="First and last name">
+          </div>
+        </div>
+        <div id="coAmbassadorFields" style="display:none; margin-top: 8px;">
+          <div class="two-col">
+            <div class="field">
+              <label>Ambassador 2 Child's Full Name <span class="req">*</span></label>
+              <input type="text" name="child_name_2" placeholder="First and last name">
+            </div>
+            <div class="field">
+              <label>Ambassador 2 Parent / Guardian Full Name <span class="req">*</span></label>
+              <input type="text" name="parent_name_2" placeholder="First and last name">
+            </div>
           </div>
         </div>
       </div>
@@ -249,7 +271,7 @@ footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
           </div>
           <div class="check-item">
             <input type="checkbox" id="c2" name="commit_amount" required>
-            <label for="c2">We understand the fundraising target is $2,250, which represents the exact one-time mold cost for the custom toy design.</label>
+            <label for="c2">We understand the fundraising target is $2,250 total for this campaign, which represents the exact one-time mold cost for the custom toy design.</label>
           </div>
           <div class="check-item">
             <input type="checkbox" id="c3" name="commit_start" required>
@@ -305,6 +327,10 @@ footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
             <label>Parent / Guardian Full Name <span class="req">*</span></label>
             <input type="text" name="signature" required placeholder="Type your full name to sign">
           </div>
+          <div class="field" id="coSignatureField" style="display:none;">
+            <label>Co-Ambassador Parent / Guardian Full Name <span class="req">*</span></label>
+            <input type="text" name="signature_2" placeholder="Type full name to sign">
+          </div>
           <div class="field">
             <label>Date</label>
             <input type="text" name="date" id="dateField" readonly>
@@ -322,7 +348,7 @@ footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
     <div class="success-screen" id="successScreen">
       <span class="icon">🎉</span>
       <h2>You're in! Welcome to the program.</h2>
-      <p>We've received your Camp Ambassador commitment for <strong id="campNameDisplay"></strong>. Our team will be in touch within 1–2 business days to confirm next steps and send a secure payment link.<br><br>Thank you for helping give a kid the summer of their life. ⛺</p>
+      <p>We've received your Camp Ambassador application for <strong id="campNameDisplay"></strong>. Our team will be in touch within 1–2 business days to confirm next steps and send a secure payment link.<br><br>Thank you for helping give a kid the summer of their life. ⛺</p>
       <a href="/">← Back to The Squeeze Project</a>
     </div>
   </div>
@@ -345,6 +371,22 @@ footer a { color: rgba(255,255,255,0.7); text-decoration: none; }
 <script>
 const d = new Date();
 document.getElementById('dateField').value = d.toLocaleDateString('en-US', {month:'long', day:'numeric', year:'numeric'});
+
+function toggleCoAmbassadors() {
+  const isCo = document.querySelector('input[name="application_type"]:checked')?.value === 'co';
+  const coFields = document.getElementById('coAmbassadorFields');
+  const coSig = document.getElementById('coSignatureField');
+  const child2 = document.querySelector('input[name="child_name_2"]');
+  const parent2 = document.querySelector('input[name="parent_name_2"]');
+  const sig2 = document.querySelector('input[name="signature_2"]');
+  coFields.style.display = isCo ? 'block' : 'none';
+  coSig.style.display = isCo ? 'block' : 'none';
+  child2.required = isCo;
+  parent2.required = isCo;
+  sig2.required = isCo;
+}
+
+toggleCoAmbassadors();
 
 function handleSubmit(e) {
   e.preventDefault();
