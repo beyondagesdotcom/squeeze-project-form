@@ -1,5 +1,5 @@
 {
-  "grand_total": 14100.0,
+  "grand_total": 14118.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -832,7 +832,7 @@
       "camp": "Tyler Hill Camp",
       "color": "#1e3a8a",
       "goal": 2250,
-      "raised": 515.0,
+      "raised": 533.0,
       "donations": [
         {
           "date": "Mar 28",
@@ -886,6 +886,12 @@
           "date": "Apr 17",
           "name": "Candy Campus",
           "amount": 50,
+          "platform": "venmo"
+        },
+        {
+          "date": "Apr 20",
+          "name": "Jenny Caporrino",
+          "amount": 18,
           "platform": "venmo"
         }
       ],
