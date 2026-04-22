@@ -1,5 +1,5 @@
 {
-  "grand_total": 14168.0,
+  "grand_total": 14204.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -832,7 +832,7 @@
       "camp": "Tyler Hill Camp",
       "color": "#1e3a8a",
       "goal": 2250,
-      "raised": 533.0,
+      "raised": 569.0,
       "donations": [
         {
           "date": "Mar 28",
@@ -892,6 +892,12 @@
           "date": "Apr 20",
           "name": "Jenny Caporrino",
           "amount": 18,
+          "platform": "venmo"
+        },
+        {
+          "date": "Apr 21",
+          "name": "Danna Yardeni",
+          "amount": 36,
           "platform": "venmo"
         }
       ],
