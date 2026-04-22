@@ -1,5 +1,5 @@
 {
-  "grand_total": 14204.0,
+  "grand_total": 14222.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -908,7 +908,7 @@
       "camp": "Camp Towanda",
       "color": "#2f6f6f",
       "goal": 2250,
-      "raised": 3137.0,
+      "raised": 3155.0,
       "donations": [
         {
           "date": "Apr 16",
@@ -1328,6 +1328,12 @@
           "date": "Apr 21",
           "name": "Jaime Palatnek",
           "amount": 50,
+          "platform": "venmo"
+        },
+        {
+          "date": "Apr 22",
+          "name": "Stephanie Weissberg",
+          "amount": 18,
           "platform": "venmo"
         }
       ],
