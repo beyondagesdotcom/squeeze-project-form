@@ -1,5 +1,5 @@
 {
-  "grand_total": 14240.0,
+  "grand_total": 14290.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -908,7 +908,7 @@
       "camp": "Camp Towanda",
       "color": "#2f6f6f",
       "goal": 2250,
-      "raised": 3173.0,
+      "raised": 3223.0,
       "donations": [
         {
           "date": "Apr 16",
@@ -1341,6 +1341,12 @@
           "name": "Alana Cooper",
           "amount": 18,
           "platform": "venmo"
+        },
+        {
+          "date": "Apr 23",
+          "name": "Jarret Kerman",
+          "amount": 50,
+          "platform": "zelle"
         }
       ],
       "logo": "/img/camp-towanda-logo.jpg"
