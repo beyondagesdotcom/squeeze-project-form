@@ -40,10 +40,9 @@ nav { background:#0d1b3e; padding:0 40px; height:60px; display:flex; align-items
 .progress-meta strong { color:var(--dark); }
 .donate-section { max-width:560px; margin:24px auto; padding:0 16px; }
 .donate-section h3 { font-size:16px; font-weight:800; color:var(--dark); text-align:center; margin-bottom:16px; }
-.donate-btns { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-bottom:12px; }
+.donate-btns { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px; }
 .btn-venmo { background:#008CFF; color:white; padding:14px; border-radius:12px; font-weight:800; font-size:15px; text-align:center; display:block; }
 .btn-stripe { background:#2f6f6f; color:white; padding:14px; border-radius:12px; font-weight:800; font-size:15px; text-align:center; display:block; }
-.btn-zelle { background:#6d1ed4; color:white; padding:14px; border-radius:12px; font-weight:800; font-size:15px; text-align:center; display:block; cursor:pointer; }
 .donate-note { font-size:12px; color:var(--muted); text-align:center; line-height:1.6; }
 .story { max-width:560px; margin:0 auto; padding:0 16px 40px; }
 .story-card { background:white; border-radius:16px; padding:28px; border:1.5px solid #bfe0e0; margin-bottom:16px; }
@@ -59,13 +58,6 @@ footer .brand { display:flex; align-items:center; justify-content:center; gap:10
 footer .brand img { height:28px; border-radius:4px; opacity:.85; }
 footer p { font-size:12px; color:rgba(255,255,255,.45); line-height:1.8; }
 footer a { color:rgba(255,255,255,.65); }
-.zelle-modal { display:none; position:fixed; top:0;left:0;right:0;bottom:0; background:rgba(0,0,0,.5); z-index:999; align-items:center; justify-content:center; }
-.zelle-modal.active { display:flex; }
-.zelle-box { background:white; border-radius:16px; padding:32px; text-align:center; max-width:320px; margin:0 16px; }
-.zelle-box h3 { color:#6d1ed4; font-size:18px; margin-bottom:12px; }
-.zelle-box .tag { font-size:22px; font-weight:900; color:#1e1e1e; margin:12px 0; }
-.zelle-box p { font-size:13px; color:#666; line-height:1.6; margin-bottom:16px; }
-.zelle-close { background:#6d1ed4; color:white; border:none; padding:10px 24px; border-radius:24px; font-size:14px; font-weight:700; cursor:pointer; font-family:inherit; }
 </style>
 </head>
 <body>
@@ -98,7 +90,6 @@ footer a { color:rgba(255,255,255,.65); }
   <h3>Support Ashley's Campaign</h3>
   <div class="donate-btns">
     <a href="https://venmo.com/thesqueezeproject?txn=pay&note=Ashley%20Kessler%20-%20Camp%20Towanda" class="btn-venmo">💙 Donate via Venmo</a>
-    <a href="#" onclick="showZelle()" class="btn-zelle">💜 Pay via Zelle</a>
     <a href="https://buy.stripe.com/14AdR82TT7eh6m586w24006" class="btn-stripe">💳 Donate via Stripe</a>
   </div>
   <p class="donate-note">Support Ashley's campaign to send kids to camp. Her $2,250 goal helps make camp possible for more kids. · The Squeeze Project 501(c)(3) approved.</p>
@@ -133,18 +124,7 @@ footer a { color:rgba(255,255,255,.65); }
   <p>100 Jericho Quadrangle, Suite 230 · Jericho, NY<br>
   <a href="https://thesqueezeproject.com">thesqueezeproject.com</a> · <a href="mailto:hello@thesqueezeproject.com">hello@thesqueezeproject.com</a> · 501(c)(3) approved</p>
 </footer>
-<div class="zelle-modal" id="zelleModal" onclick="if(event.target===this)hideZelle()">
-  <div class="zelle-box">
-    <h3>💜 Pay via Zelle</h3>
-    <p>Open your bank app and send to:</p>
-    <div class="tag">@thesqueezeproject</div>
-    <p>Include your name and "Ashley" in the memo so we can track your donation!</p>
-    <button class="zelle-close" onclick="hideZelle()">Got it</button>
-  </div>
-</div>
 <script>
-function showZelle(){ document.getElementById("zelleModal").classList.add("active"); }
-function hideZelle(){ document.getElementById("zelleModal").classList.remove("active"); }
 function copyLink(){ navigator.clipboard.writeText('https://thesqueezeproject.com/ambassadors/ashley-kessler/').then(()=>alert('Link copied!')); }
 fetch('/data/donations.json').then(r=>r.json()).then(d=>{
   const a = d.ambassadors['ashley'];
