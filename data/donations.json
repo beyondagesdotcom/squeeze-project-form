@@ -7,7 +7,7 @@
       "camp": "Camp IHC",
       "color": "#4A6FA5",
       "goal": 3000,
-      "raised": 3156.0,
+      "raised": 3136.0,
       "donations": [
         {
           "date": "Mar 24",
@@ -182,13 +182,6 @@
           "name": "Stavroula Krasilovsky",
           "amount": 36.0,
           "platform": "stripe"
-        },
-        {
-          "date": "Apr 23",
-          "name": "Lauren Schneidman",
-          "amount": 20,
-          "platform": "stripe",
-          "note": "rentals"
         }
       ]
     },
@@ -839,7 +832,7 @@
       "camp": "Tyler Hill Camp",
       "color": "#1e3a8a",
       "goal": 2250,
-      "raised": 569.0,
+      "raised": 589.0,
       "donations": [
         {
           "date": "Mar 28",
@@ -906,6 +899,12 @@
           "name": "Danna Yardeni",
           "amount": 36,
           "platform": "venmo"
+        },
+        {
+          "date": "Apr 23",
+          "name": "Lauren Schneidman",
+          "amount": 20,
+          "platform": "stripe"
         }
       ],
       "logo": "https://i.imgur.com/19ea8C7.jpeg"
