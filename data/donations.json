@@ -1,5 +1,5 @@
 {
-  "grand_total": 14921.0,
+  "grand_total": 14946.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -568,7 +568,7 @@
       "camp": "Camp Westmont",
       "color": "#1a2744",
       "goal": 2250,
-      "raised": 2250.0,
+      "raised": 2275.0,
       "donations": [
         {
           "date": "Mar 24",
@@ -779,6 +779,12 @@
           "name": "Andrea Kreinik",
           "amount": 50,
           "platform": "stripe"
+        },
+        {
+          "date": "May 5",
+          "name": "Hillary Meisner",
+          "amount": 25,
+          "platform": "venmo"
         }
       ]
     },
