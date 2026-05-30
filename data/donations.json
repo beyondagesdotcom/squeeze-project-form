@@ -1,5 +1,5 @@
 {
-  "grand_total": 15457.0,
+  "grand_total": 15507.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -190,7 +190,7 @@
       "camp": "Camp Pontiac",
       "color": "#CC0000",
       "goal": 2400,
-      "raised": 2420.0,
+      "raised": 2470.0,
       "donations": [
         {
           "date": "Mar 24",
@@ -335,6 +335,12 @@
           "name": "Sari Krantz",
           "amount": 50.0,
           "platform": "stripe"
+        },
+        {
+          "date": "May 30",
+          "name": "Erica Merlis",
+          "amount": 50.0,
+          "platform": "venmo"
         }
       ]
     },
