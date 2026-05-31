@@ -1,5 +1,5 @@
 {
-  "grand_total": 15507.0,
+  "grand_total": 15537.0,
   "goal": 15250,
   "ambassadors": {
     "luke": {
@@ -190,7 +190,7 @@
       "camp": "Camp Pontiac",
       "color": "#CC0000",
       "goal": 2400,
-      "raised": 2470.0,
+      "raised": 2500.0,
       "donations": [
         {
           "date": "Mar 24",
@@ -340,6 +340,12 @@
           "date": "May 30",
           "name": "Erica Merlis",
           "amount": 50.0,
+          "platform": "venmo"
+        },
+        {
+          "date": "May 31",
+          "name": "Gene Forman",
+          "amount": 30.0,
           "platform": "venmo"
         }
       ]
