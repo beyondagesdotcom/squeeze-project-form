@@ -34,7 +34,8 @@ export default {
     // All other endpoints require Bearer auth.
     const auth = request.headers.get('authorization') || '';
     const provided = auth.replace(/^Bearer\s+/i, '');
-    if (!env.PASSCODE || provided !== env.PASSCODE) {
+    const passcode = await getEnv('PASSCODE', env);
+    if (!passcode || provided !== passcode) {
       return json({ error: 'unauthorized' }, 401);
     }
 
@@ -52,8 +53,9 @@ export default {
 // ───────── GitHub helpers ─────────
 
 async function ghFetch(env, urlPath, init = {}) {
+  const token = await getEnv('GITHUB_TOKEN', env);
   const headers = {
-    Authorization: `token ${env.GITHUB_TOKEN}`,
+    Authorization: `token ${token}`,
     'User-Agent': 'squeeze-project-admin',
     Accept: 'application/vnd.github+json',
     ...(init.headers || {}),
@@ -139,11 +141,12 @@ async function parseImage(request, env) {
     "Return JSON shape: {\"donor_name\":\"...\",\"amount\":50,\"platform\":\"venmo\",\"ambassador_key\":\"lucas\"}"
   ].join('\n');
 
+  const apiKey = await getEnv('ANTHROPIC_API_KEY', env);
   const apiResp = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
-      'x-api-key': env.ANTHROPIC_API_KEY,
+      'x-api-key': apiKey,
       'anthropic-version': '2023-06-01',
     },
     body: JSON.stringify({
@@ -246,6 +249,15 @@ function validate(data) {
 }
 
 // ───────── Utilities ─────────
+
+// Resolve a secret/var that may be bound as a plain string (legacy env var)
+// OR as a Secrets Store binding (which exposes an async .get() method).
+async function getEnv(key, env) {
+  const v = env && env[key];
+  if (v == null) return null;
+  if (typeof v === 'object' && typeof v.get === 'function') return await v.get();
+  return v;
+}
 
 function round2(n) { return Math.round(n * 100) / 100; }
 
