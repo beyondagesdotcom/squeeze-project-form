@@ -44,13 +44,7 @@ export default {
       return new Response(HTML, { headers: { 'content-type': 'text/html; charset=utf-8' } });
     }
 
-    // All other endpoints require Bearer auth.
-    const auth = request.headers.get('authorization') || '';
-    const provided = auth.replace(/^Bearer\s+/i, '');
-    const passcode = await getEnv('PASSCODE', env);
-    if (!passcode || provided !== passcode) {
-      return json({ error: 'unauthorized' }, 401);
-    }
+    // Passcode gate disabled per user — URL itself acts as the secret.
 
     try {
       if (request.method === 'GET' && path === '/state') return await getState(env);
@@ -635,7 +629,7 @@ let passcode = localStorage.getItem('sp_pass') || '';
 let state = null;
 let imageBlob = null;
 
-if (passcode) tryUnlock(true);
+tryUnlock(true); // auto-unlock; passcode gate disabled in worker
 
 async function unlock() {
   const v = document.getElementById('passcode').value.trim();
