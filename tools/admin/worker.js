@@ -540,7 +540,8 @@ async function onFileChosen() {
     document.getElementById('date').value = j.today || '';
     document.getElementById('previewSize').textContent = (f.size/1024).toFixed(0) + ' KB · parsed ✓';
   } catch (e) {
-    document.getElementById('previewSize').textContent = (f.size/1024).toFixed(0) + ' KB · parse failed (fill in by hand)';
+    const msg = (e && e.message) ? String(e.message).slice(0, 120) : 'parse failed';
+    document.getElementById('previewSize').textContent = (f.size/1024).toFixed(0) + ' KB · ' + msg;
     document.getElementById('date').value = todayGuess();
   }
 }
