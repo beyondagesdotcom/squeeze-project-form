@@ -300,12 +300,12 @@ async function stripeSync(env) {
   for (const [key, ambData] of Object.entries(content.ambassadors || {})) {
     for (const d of ambData.donations || []) {
       if (d.platform === 'stripe') {
-        seen.add(`${key}|${(d.name || '').toLowerCase().trim()}|${d.amount}`);
+        seen.add(`${key}|${(d.name || '').toLowerCase().replace(/\s+/g, ' ').trim()}|${d.amount}`);
       }
     }
   }
   const newOnes = candidates.filter(c =>
-    !seen.has(`${c.ambassador_key}|${c.name.toLowerCase().trim()}|${c.amount}`)
+    !seen.has(`${c.ambassador_key}|${c.name.toLowerCase().replace(/\s+/g, ' ').trim()}|${c.amount}`)
   );
 
   // Sort newest first for display
@@ -337,7 +337,7 @@ async function stripeCommitBatch(request, env) {
   for (const [key, ambData] of Object.entries(content.ambassadors || {})) {
     for (const d of ambData.donations || []) {
       if (d.platform === 'stripe') {
-        seen.add(`${key}|${(d.name || '').toLowerCase().trim()}|${d.amount}`);
+        seen.add(`${key}|${(d.name || '').toLowerCase().replace(/\s+/g, ' ').trim()}|${d.amount}`);
       }
     }
   }
